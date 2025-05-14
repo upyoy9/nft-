@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced NFT Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>NFT Generator</h1>
+
+  <div class="form-group">
+    <label>Upload Trait Folders:</label>
+    <div id="upload-area" class="upload-box">Drag & Drop Folders Here or Click to Select</div>
+  </div>
+
+  <div class="form-group">
+    <label>Total NFTs to Generate:</label>
+    <input type="number" id="totalCount" placeholder="e.g., 10000" />
+  </div>
+
+  <div class="form-group">
+    <label>NFTs per Batch:</label>
+    <input type="number" id="batchSize" placeholder="e.g., 1000" />
+  </div>
+
+  <div class="form-group">
+    <label>Image Size (px):</label>
+    <input type="number" id="imgSize" placeholder="e.g., 1000 for 1000x1000" />
+  </div>
+
+  <button id="generateBtn">Generate NFTs</button>
+  <button id="downloadBtn">Download ZIP</button>
+
+  <div id="preview-container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
